@@ -7,26 +7,28 @@ const HamburgerMenu = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className={styles.menuContainer}>
-      <button onClick={toggleMenu} className={styles.menuButton}>
-        ☰
-      </button>
+    <>
+      <div className={styles.menuContainer}>
+        <button onClick={toggleMenu} className={styles.menuButton}>
+          ☰
+        </button>
+      </div>
       {isOpen && (
         <div className={styles.dropdown}>
-          <ul className={styles.menuList}>
-            <li className={styles.menuItem}>
+          <ul className={styles.dropdownMenu}>
+            <li className={styles.dropdownItem}>
               <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
             </li>
-            <li className={styles.menuItem}>
+            <li className={styles.dropdownItem}>
               <Link to="/past-tests" onClick={() => setIsOpen(false)}>View Past Tests</Link>
             </li>
-            <li className={styles.menuItem}>
+            <li className={styles.dropdownItem}>
               <Link to="/practice" onClick={() => setIsOpen(false)}>Practice Mode</Link>
             </li>
           </ul>
         </div>
       )}
-    </div>
+    </>
   );
 };
 
