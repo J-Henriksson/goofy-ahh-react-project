@@ -1,0 +1,32 @@
+.practice-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .subject-buttons {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .subject-buttons button {
+    padding: 10px 20px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .subject-buttons button.active {
+    background: #3a86ff;
+    color: white;
+  }
+  
+  .question {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
