@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import PracticeMode from './pages/PracticeMode';
 import ViewPastTests from './pages/ViewPastTests';
-import AboutUs from './pages/AboutUs.jsx'
+import AboutUs from './pages/AboutUs'
 
 function App() {
   return (
