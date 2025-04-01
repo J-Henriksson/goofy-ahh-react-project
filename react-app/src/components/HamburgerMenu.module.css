@@ -1,36 +1,67 @@
 .menuContainer {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  z-index: 1000; 
-}
-
-.menuButton {
-  font-size: 2rem;  
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: rgb(0, 0, 0);
-}
-
-.dropdown {
-  position: absolute;
-  right: 0;
-  top: 2.5rem; 
-  background-color: black;  
-  color: white;            
-  border: 1px solid black;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  padding: 0.5rem;
-  font-size: 1.2rem;        
-}
-
-.menuList {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menuItem {
-  margin: 0.5rem 0;
-}
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1100; /* Keep button above other content */
+  }
+  
+  .menuButton {
+    font-size: 2rem; /* Bigger button */
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+  }
+  
+  /* Dropdown container that slides down from the top */
+  .dropdown {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 1000;
+    overflow: hidden;
+    animation: dropDown 0.3s ease forwards;
+  }
+  
+  /* Keyframes for sliding down effect */
+  @keyframes dropDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Menu inside the dropdown */
+  .dropdownMenu {
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Individual menu items */
+  .dropdownItem {
+    margin: 1rem 0;
+  }
+  
+  /* Interactive navigation links */
+  .dropdownItem a {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .dropdownItem a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+  }
+  
