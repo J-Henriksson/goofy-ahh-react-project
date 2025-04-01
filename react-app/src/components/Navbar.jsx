@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FaHome } from 'react-icons/fa';
 import styles from './Navbar.module.css';
 
@@ -8,24 +8,44 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <ul className={styles.navList}>
         <li className={styles.navItem}>
-          <Link to="/" className={styles.navLink}>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+            }
+          >
             <FaHome className={styles.icon} />
-          </Link>
+          </NavLink>
         </li>
         <li className={styles.navItem}>
-          <Link to="/past-tests" className={styles.navLink}>
+          <NavLink
+            to="/past-tests"
+            className={({ isActive }) =>
+              isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+            }
+          >
             Past Tests With Solutions
-          </Link>
+          </NavLink>
         </li>
         <li className={styles.navItem}>
-          <Link to="/practice" className={styles.navLink}>
+          <NavLink
+            to="/practice"
+            className={({ isActive }) =>
+              isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+            }
+          >
             Practice Mode
-          </Link>
+          </NavLink>
         </li>
         <li className={styles.navItem}>
-          <Link to="/about-us" className={styles.navLink}>
+          <NavLink
+            to="/about-us"
+            className={({ isActive }) =>
+              isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+            }
+          >
             About Us
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>
@@ -33,6 +53,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 
 

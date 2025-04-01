@@ -4,40 +4,47 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     position: fixed;
     top: 0;
-    left: 0;           /* Ensures it starts at the very left */
-    width: 100vw;      /* Uses full viewport width */
+    left: 0;
+    width: 100vw;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
-}
-
-.navList {
+  }
+  
+  .navList {
     display: flex;
-    gap: 3rem; /* Even spacing between links */
+    gap: 3rem;
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.navLink {
+  }
+  
+  .navLink {
     text-decoration: none;
     color: #333;
     font-size: 1.1rem;
     transition: color 0.3s ease, transform 0.3s ease;
     display: flex;
     align-items: center;
-}
-
-.navLink:hover {
+  }
+  
+  .navLink:hover {
     color: #007bff;
     transform: scale(1.05);
-}
-
-.icon {
+  }
+  
+  /* Active link styling */
+  .active {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .icon {
     font-size: 1.5rem;
-}
+  }
+  
 
   
   
