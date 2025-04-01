@@ -25,6 +25,9 @@ const HamburgerMenu = () => {
             <li className={styles.dropdownItem}>
               <Link to="/practice" onClick={() => setIsOpen(false)}>Practice Mode</Link>
             </li>
+            <li className={styles.dropdownItem}>
+              <Link to="/about-us" onClick={() => setIsOpen(false)}>About Us</Link>
+            </li>
           </ul>
         </div>
       )}

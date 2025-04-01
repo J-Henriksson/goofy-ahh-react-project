@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TextHeavyPage = () => {
+const AboutUs = () => {
   return (
     <div className="text-page">
       <h1>Varför matte fysik provet?</h1>
@@ -16,4 +16,4 @@ const TextHeavyPage = () => {
   );
 };
 
-export default TextHeavyPage;
+export default AboutUs;
