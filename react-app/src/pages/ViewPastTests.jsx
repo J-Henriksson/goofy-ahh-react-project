@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './ViewPastTests.css';
 const ViewPastTests = () => {
   return (
     <div>
