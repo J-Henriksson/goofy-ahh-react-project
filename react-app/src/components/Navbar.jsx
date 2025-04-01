@@ -14,7 +14,7 @@ const Navbar = () => {
         </li>
         <li className={styles.navItem}>
           <Link to="/past-tests" className={styles.navLink}>
-            Past Tests
+            Past Tests With Solutions
           </Link>
         </li>
         <li className={styles.navItem}>
