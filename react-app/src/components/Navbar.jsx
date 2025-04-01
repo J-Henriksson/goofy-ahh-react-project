@@ -22,6 +22,11 @@ const Navbar = () => {
             Practice Mode
           </Link>
         </li>
+        <li className={styles.navItem}>
+          <Link to="/about-us" className={styles.navLink}>
+            About Us
+          </Link>
+        </li>
       </ul>
     </nav>
   );
