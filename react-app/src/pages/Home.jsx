@@ -1,11 +1,11 @@
 import React from 'react';
-import HamburgerMenu from '../components/HamburgerMenu';
+import Navbar from '../components/Navbar';
 import styles from './Home.module.css';
 
 const Home = () => {
   return (
     <div className={styles.homeContainer}>
-      <HamburgerMenu />
+      <Navbar />
       <header className={styles.headerText}>
         <h1>Welcome to Mattefysik Prep</h1>
       </header>
@@ -19,4 +19,5 @@ const Home = () => {
 };
 
 export default Home;
+
 
