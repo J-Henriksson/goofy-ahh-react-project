@@ -1,0 +1,41 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centers content vertically */
+    align-items: center;     /* centers content horizontally */
+    min-height: 100vh;       /* fills viewport height */
+    width: 100vw;            /* use full viewport width */
+    padding: 2rem;
+    background-image: url('../assets/images/background.jpeg');
+    background-size: cover;         /* ensures image covers the area */
+    background-position: center;    /* centers the background image */
+    background-repeat: no-repeat;   /* no repeating */
+  }
+  
+  /* Global reset if not already applied */
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  /* Responsive header text */
+  .headerText {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .headerText h1 {
+    font-size: clamp(2rem, 5vw, 4rem); /* responsive font size */
+  }
+  
+  /* Adjust main content container if you want it to scale more fully */
+  .mainContent {
+    width: 90%; /* use more of the available width instead of a fixed max-width */
+    text-align: center;
+    color: #fff;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+  }
+  
+  
