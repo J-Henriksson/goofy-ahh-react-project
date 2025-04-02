@@ -7,14 +7,16 @@ const tests = [
     termin: "2024",
     title: "Matte",
     testPdf: "../public/pdfs/matte2024.pdf",
-    solutionPdf: "/public/pdfs/solution1.pdf",
+    facitPdf: "../public/pdfs/facitmatte2024.pdf",
+    solutionPdf: "../public/pdfs/solutionmatte2024.pdf",
   },
   {
     id: 2,
     termin: "2024",
     title: "Fysik",
-    testPdf: "../public/pdfs/matte2024.pdf",
-    solutionPdf: "/public/pdfs/solution2.pdf",
+    testPdf: "../public/pdfs/fysik2024.pdf",
+    facitPdf: "../public/pdfs/facitfysik2024.pdf",
+    solutionPdf: "../public/pdfs/solutionfysik2024.pdf",
   }
 ];
 
@@ -26,6 +28,7 @@ const ViewPastTests = () => {
           <tr>
             <th>År</th>
             <th>Test</th>
+            <th>Facit</th>
             <th>Solution</th>
           </tr>
         </thead>
@@ -41,6 +44,16 @@ const ViewPastTests = () => {
                   className={styles.pdfLink}
                 >
                   {test.title}
+                </a>
+              </td>
+              <td>
+                <a
+                  href={test.facitPdf}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.pdfLink}
+                >
+                  Facit
                 </a>
               </td>
               <td>
