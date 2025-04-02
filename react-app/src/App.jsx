@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Navbar />
       {/* Top padding so that content isn't hidden behind the fixed navbar */}
-      <div style={{ paddingTop: '60px' }}>
+      <div className="content">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/practice" element={<PracticeMode />} />

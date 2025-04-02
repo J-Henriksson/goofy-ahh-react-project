@@ -24,11 +24,20 @@ a:hover {
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
+
+.content {
+  margin-top: 60px; /* Push content below the fixed navbar */
+  min-height: calc(100vh - 60px); /* At minimum, fill the viewport */
+  width: 100%;
+  box-sizing: border-box;
+}
+
 
 h1 {
   font-size: 3.2em;
