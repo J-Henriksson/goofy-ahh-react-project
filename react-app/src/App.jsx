@@ -15,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/practice" element={<PracticeMode />} />
+        <Route path="/practice/:subject/:year" element={<PracticeMode />} />
         <Route path="/past-tests" element={<ViewPastTests />} />
         <Route path="/about-us" element={<AboutUs />} />
       </Routes>

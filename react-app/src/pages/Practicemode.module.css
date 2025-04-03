@@ -1,32 +1,78 @@
-.practice-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+/* HamburgerMenu.module.css */
+
+.menuContainer {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.menuButton {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.menuButton:hover {
+  background: #f5f5f5;
+  transform: scale(1.05);
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  min-width: 250px;
+  z-index: 1001;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.menuContainer:hover .dropdown,
+.menuContainer:focus-within .dropdown {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.subjectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.subjectHeader.active .arrow {
+  transform: rotate(90deg);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menuContainer {
+    top: 10px;
+    left: 10px;
   }
   
-  .subject-buttons {
-    display: flex;
-    gap: 15px;
-    margin: 20px 0;
+  .dropdown {
+    width: calc(100vw - 40px);
+    left: 0;
+    position: fixed;
+    top: 60px;
   }
-  
-  .subject-buttons button {
-    padding: 10px 20px;
-    background: #f0f0f0;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .subject-buttons button.active {
-    background: #3a86ff;
-    color: white;
-  }
-  
-  .question {
-    background: #f9f9f9;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-  }
+}
