@@ -6,17 +6,17 @@ const tests = [
     id: 1,
     termin: "2024",
     title: "Matte",
-    testPdf: "../public/pdfs/matte2024.pdf",
-    facitPdf: "../public/pdfs/facitmatte2024.pdf",
-    solutionPdf: "../public/pdfs/solutionmatte2024.pdf",
+    testPdf: "../pdfs/matte2024.pdf",
+    facitPdf: "../pdfs/facitmatte2024.pdf",
+    solutionPdf: "../pdfs/solutionmatte2024.pdf",
   },
   {
     id: 2,
     termin: "2024",
     title: "Fysik",
-    testPdf: "../public/pdfs/fysik2024.pdf",
-    facitPdf: "../public/pdfs/facitfysik2024.pdf",
-    solutionPdf: "../public/pdfs/solutionfysik2024.pdf",
+    testPdf: "../pdfs/fysik2024.pdf",
+    facitPdf: "../pdfs/facitfysik2024.pdf",
+    solutionPdf: "../pdfs/solutionfysik2024.pdf",
   }
 ];
 
