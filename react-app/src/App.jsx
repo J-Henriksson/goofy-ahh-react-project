@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import PracticeMode from './pages/PracticeMode';
 import ViewPastTests from './pages/ViewPastTests';
 import AboutUs from './pages/AboutUs';
+import AllmantProv from './pages/AllmantProv';
 import './index.css'; // Global styles
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/practice" element={<PracticeMode />} />
           <Route path="/practice/:subject/:year" element={<PracticeMode />} />
           <Route path="/past-tests" element={<ViewPastTests />} />
+          <Route path="/allmant-prov" element={<AllmantProv />} />
           <Route path="/about-us" element={<AboutUs />} />
         </Routes>
       </div>

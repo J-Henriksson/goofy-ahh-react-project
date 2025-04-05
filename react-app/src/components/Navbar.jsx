@@ -39,6 +39,16 @@ const Navbar = () => {
         </li>
         <li className={styles.navItem}>
           <NavLink
+            to="/allmant-prov"
+            className={({ isActive }) =>
+              isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+            }
+          >
+            Allmänt Prov
+          </NavLink>
+        </li>
+        <li className={styles.navItem}>
+          <NavLink
             to="/about-us"
             className={({ isActive }) =>
               isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
@@ -53,7 +63,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-
