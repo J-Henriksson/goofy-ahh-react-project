@@ -24,7 +24,7 @@ const Navbar = () => {
               isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
             }
           >
-            Past Tests With Solutions
+            Tidigare Test och Lösningar
           </NavLink>
         </li>
         <li className={styles.navItem}>
@@ -44,7 +44,7 @@ const Navbar = () => {
               isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
             }
           >
-            Allmänt Prov
+            Allmänt om Provet
           </NavLink>
         </li>
         <li className={styles.navItem}>
@@ -54,7 +54,7 @@ const Navbar = () => {
               isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
             }
           >
-            About Us
+            Om Oss
           </NavLink>
         </li>
       </ul>
