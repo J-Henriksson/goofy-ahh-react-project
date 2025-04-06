@@ -289,7 +289,7 @@ export const practiceQuestions = {
         "0.6 m",
         "1.2 m"
       ],
-      answer: "0.3 m" // Facit: option b (assumed)
+      answer: "0.3 m" // Facit: option b 
     },
     {
       id: 7,
@@ -300,7 +300,7 @@ export const practiceQuestions = {
         "Ek = 2.5 W",
         "Kan ej avgöras"
       ],
-      answer: "Ek = 2.5 J" // Facit: option a (assumed)
+      answer: "Ek = 2.5 J" // Facit: option a
     },
     {
       id: 8,
@@ -311,7 +311,7 @@ export const practiceQuestions = {
         "Antalet vattenmolekyler i ett glas vatten",
         "Antalet människor på jorden"
       ],
-      answer: "Antalet vattenmolekyler i ett glas vatten" // Facit: option c (assumed)
+      answer: "Antalet vattenmolekyler i ett glas vatten" // Facit: option c 
     },
     {
       id: 9,
@@ -322,19 +322,22 @@ export const practiceQuestions = {
         "g",
         "2g"
       ],
-      answer: "g/4" // Facit: option a (assumed)
+      answer: "g/4" // Facit: option a 
     },
     {
       id: 10,
       text: "I en idealiserad elektrisk krets parallellkopplas två motstånd med resistanserna xR och R/x, där x är ett dimensionslöst tal. Vilket alternativ beskriver bäst den utvecklade effekten i kretsen som funktion av x?",
-      options: [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      answer: "C", // Facit: option a (assumed)
+      options: ["A", "B", "C", "D"],
+      answer: "C", // Facit: option a 
       image: "../images/fysik2024_10.png"
+    },
+    {
+      id: 13,
+      text: "En boll släpps från vila i ett läge vid tiden t = 0. En annan boll ges samtidigt en horisontell hastighet i ett annat läge. Bollarna faller sedan under inverkan av tyngdkraften. Luftmotstånd försummas. Vilken av graferna kan beskriva avståndet s mellan bollarna som funktion av tiden?",
+      options: ["A", "B", "C", "D"],
+      answer: "A",
+      image: "../images/fysik2024_10.png"
+
     }
   ]
 };

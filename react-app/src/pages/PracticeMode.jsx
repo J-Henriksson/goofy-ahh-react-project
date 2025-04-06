@@ -4,17 +4,26 @@ import { practiceQuestions } from '../data/practiceQuestions';
 
 const PracticeMode = () => {
   const [selectedTopic, setSelectedTopic] = useState(null);
+  const [remainingQuestions, setRemainingQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [selectedOption, setSelectedOption] = useState('');
   const [feedback, setFeedback] = useState('');
 
+  // When a topic button is clicked, set the selected topic and reset remaining questions.
   const handleTopicSelect = (topic) => {
     setSelectedTopic(topic);
     setFeedback('');
     setSelectedOption('');
-    const questions = practiceQuestions[topic];
-    const randomIndex = Math.floor(Math.random() * questions.length);
-    setCurrentQuestion(questions[randomIndex]);
+    // Make a copy of the topic questions so we can remove questions as they are shown.
+    const topicQuestions = [...practiceQuestions[topic]];
+    setRemainingQuestions(topicQuestions);
+    // Pick a random question from the copied list.
+    const randomIndex = Math.floor(Math.random() * topicQuestions.length);
+    const question = topicQuestions[randomIndex];
+    // Remove that question so it won't be repeated.
+    topicQuestions.splice(randomIndex, 1);
+    setRemainingQuestions(topicQuestions);
+    setCurrentQuestion(question);
   };
 
   const handleOptionSelect = (option) => {
@@ -32,9 +41,16 @@ const PracticeMode = () => {
 
   const nextQuestion = () => {
     if (!selectedTopic) return;
-    const questions = practiceQuestions[selectedTopic];
-    const randomIndex = Math.floor(Math.random() * questions.length);
-    setCurrentQuestion(questions[randomIndex]);
+    // Use the current remaining questions; if empty, reset to full list.
+    let topicQuestions = [...remainingQuestions];
+    if (topicQuestions.length === 0) {
+      topicQuestions = [...practiceQuestions[selectedTopic]];
+    }
+    const randomIndex = Math.floor(Math.random() * topicQuestions.length);
+    const question = topicQuestions[randomIndex];
+    topicQuestions.splice(randomIndex, 1);
+    setRemainingQuestions(topicQuestions);
+    setCurrentQuestion(question);
     setSelectedOption('');
     setFeedback('');
   };
@@ -90,6 +106,7 @@ const PracticeMode = () => {
             <button onClick={nextQuestion} className={styles.button}>
               Next Question
             </button>
+            <button className={styles.button}>Show Solution</button>
           </div>
           {feedback && <div className={styles.feedback}>{feedback}</div>}
         </div>
