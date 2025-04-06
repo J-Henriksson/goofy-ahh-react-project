@@ -9,10 +9,28 @@
     text-align: center;
     color: #2d3748;
     font-size: 2.2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid #4a5568;
     font-family: 'Arial', sans-serif;
+}
+
+.description {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background-color: #f8fafc;
+    border-radius: 6px;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #4a5568;
+}
+
+.description p {
+    margin-bottom: 1rem;
+}
+
+.description strong {
+    color: #2d3748;
 }
 
 .table-container {
@@ -75,6 +93,11 @@ td:first-child {
     
     .title {
         font-size: 1.8rem;
+    }
+    
+    .description {
+        padding: 1rem;
+        font-size: 0.9rem;
     }
     
     th, td {

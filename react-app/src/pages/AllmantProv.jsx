@@ -3,7 +3,7 @@ import './AllmantProv.css';
 
 const AllmantProv = () => {
   useEffect(() => {
-    document.title = "Allmänt om MATEMATIK delen";
+    document.title = "Allmänt om matematikdelen";
   }, []);
 
   const categories = [
@@ -20,8 +20,24 @@ const AllmantProv = () => {
 
   return (
     <div className="container">
-      <h1 className="title">Allmänt om matematikdelen delen</h1>
+      <h1 className="title">Allmänt om matematikdelen</h1>
       
+      <div className="description">
+        <p>
+          Mattedelen av mattefysikprovet består av totalt 30 frågor och är utformat för att genomföras på 3 timmar. 
+          Frågorna är främst formulerade för att vara lösbara med matematiken från matte 1-4, men på senare prov har 
+          även mer material från matte 5 också inkorpererats. Fördelningen av uppgifterna är som följer:
+        </p>
+        <p>
+          <strong>Del A:</strong> Här ska du välja rätt svar från ett antal alternativ. Det finns 20 sådana uppgifter, 
+          och varje uppgift är värd 1 poäng.<br/>
+          <strong>Del B:</strong> I denna del ska du ge ett kortfattat svar på varje uppgift utan svarsalternativ. 
+          Det finns 10 uppgifter av denna typ, och varje uppgift är värd 2 poäng.<br/>
+          <strong>Del C:</strong> Denna del består av en uppgift som kräver en fullständig lösning. 
+          Denna uppgift är värd 5 poäng.
+        </p>
+      </div>
+
       <div className="table-container">
         <table>
           <thead>
