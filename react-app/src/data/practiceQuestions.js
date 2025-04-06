@@ -3,6 +3,7 @@ export const practiceQuestions = {
   math: [
     {
       id: 1,
+      category: ["Algebra och uttrycksförenkling"],
       text: "Talen a och b är reella. Givet att x = (a + b√3)³ − (a − b√3)³, så gäller att x är:",
       options: [
         "2ab(3a+b)",
@@ -11,9 +12,11 @@ export const practiceQuestions = {
         "inget av (a)-(c)"
       ],
       answer: "6b√3(a²+b²)" // Facit: 1b
+
     },
     {
       id: 2,
+      category: ["Olikheter och ekvationer"],
       text: "Om a och b är reella tal så är villkoret \"minst ett av talen a och b är skilt från 0\" ekvivalent med:",
       options: [
         "ab ≠ 0",
@@ -25,6 +28,7 @@ export const practiceQuestions = {
     },
     {
       id: 3,
+      category: ["Absolutbelopp och rotuttryck"],
       text: "Om x är ett reellt tal och √(x²+2x+1) − √(x²−2x+1) = −2, så gäller:",
       options: [
         "x ≥ 1",
@@ -36,6 +40,7 @@ export const practiceQuestions = {
     },
     {
       id: 4,
+      category: ["Olikheter och ekvationer", "Logaritmer och exponenter"],
       text: "Olikheten (½)^x < 4 är ekvivalent med olikheten:",
       options: [
         "x < 0",
@@ -47,6 +52,7 @@ export const practiceQuestions = {
     },
     {
       id: 5,
+      category: ["Olikheter och ekvationer"],
       text: "Alla lösningar till olikheten x/(2x−1) ≥ 1/x ges av:",
       options: [
         "alla negativa x samt alla x ≥ 1",
@@ -58,6 +64,7 @@ export const practiceQuestions = {
     },
     {
       id: 6,
+      category: ["Absolutbelopp och rotuttryck"],
       text: "Om x ⊕ y = |x| − ||x+y| − |y|| för alla reella tal x och y, så gäller att:",
       options: [
         "x ⊕ y = y ⊕ x",
@@ -69,6 +76,7 @@ export const practiceQuestions = {
     },
     {
       id: 7,
+      category: ["Andragradsekvationer och polynom"],
       text: "Antalet heltalslösningar till olikheten bx + 17 − 2x² > 0, där b är ett reellt tal, är:",
       options: [
         "0",
@@ -80,6 +88,7 @@ export const practiceQuestions = {
     },
     {
       id: 8,
+      category: ["Andragradsekvationer och polynom"],
       text: "Givet är ekvationen ax² + bx + c = 0, där abc ≠ 0. Två av koefficienterna är reella och en är icke-reell. Då kan man dra slutsatsen att ekvationen inte är ekvivalent med någon ekvation Az²+Bz+C=0, där:",
       options: [
         "alla tre koefficienterna är reella",
@@ -91,6 +100,7 @@ export const practiceQuestions = {
     },
     {
       id: 9,
+      category: ["Andragradsekvationer och polynom"],
       text: "Givet är ekvationen ax² + bx + c = 0, där abc ≠ 0. Två av koefficienterna är reella och en är icke-reell. Då kan man dra slutsatsen att:",
       options: [
         "en lösning är reell och den andra icke-reell",
@@ -102,6 +112,7 @@ export const practiceQuestions = {
     },
     {
       id: 10,
+      category: ["Annat"],
       text: "Priset för en förpackning har ökat med 10%, medan innehållets vikt har minskat med 10%. Kilopriset har då ökat med:",
       options: [
         "mindre än 20%",
@@ -113,6 +124,7 @@ export const practiceQuestions = {
     },
     {
       id: 11,
+      category: ["Logaritmer och exponenter", "Olikheter och ekvationer"],
       text: "Antalet reella lösningar till ekvationen 9e^(2x) + a e^x − 1 = 0 för a > 0 är:",
       options: [
         "1",
@@ -124,6 +136,7 @@ export const practiceQuestions = {
     },
     {
       id: 12,
+      category: ["Logaritmer och exponenter"],
       text: "För alla positiva reella tal x och y gäller att:",
       options: [
         "ln x + ln y = ln x · ln y",
@@ -135,6 +148,7 @@ export const practiceQuestions = {
     },
     {
       id: 13,
+      category: ["Logaritmer och exponenter"],
       text: "För alla positiva reella tal x och p gäller att:",
       options: [
         "p ln x = ln x^p",
@@ -146,6 +160,7 @@ export const practiceQuestions = {
     },
     {
       id: 14,
+      category: ["Trigonometri"],
       text: "Om sinα > 0 och tanα = p, så gäller att cosα är lika med:",
       options: [
         "p/√(1+p²)",
@@ -157,6 +172,7 @@ export const practiceQuestions = {
     },
     {
       id: 15,
+      category: ["Trigonometri"],
       text: "Om cosα > 0 och tanα = p, så gäller att sinα är lika med:",
       options: [
         "p/√(1+p²)",
@@ -168,6 +184,7 @@ export const practiceQuestions = {
     },
     {
       id: 16,
+      category: ["Trigonometri"],
       text: "Om α ∈ [0, 2π], så gäller:",
       options: [
         "sin(α/2) = √((1+cosα)/2)",
@@ -179,6 +196,7 @@ export const practiceQuestions = {
     },
     {
       id: 17,
+      category: ["Andragradsekvationer och polynom"],
       text: "Ekvationen x² + bx + c = 0, där b och c är reella, har lösningarna x₁,₂ = (−b ± √(b²−4c))/2. Man kan dra slutsatsen att:",
       options: [
         "både b och c är heltal",
@@ -190,6 +208,7 @@ export const practiceQuestions = {
     },
     {
       id: 18,
+      category: ["Geometri"],
       text: "En triangel har sidlängderna √11, √39, √92. Den minsta vinkeln i triangeln är då:",
       options: [
         "30°",
@@ -201,6 +220,7 @@ export const practiceQuestions = {
     },
     {
       id: 19,
+      category: ["Geometri"],
       text: "En triangel har sidlängderna √13, √41, √52. Den minsta vinkeln i triangeln är då:",
       options: [
         "30°",
@@ -212,6 +232,7 @@ export const practiceQuestions = {
     },
     {
       id: 20,
+      category: ["Geometri"],
       text: "Givet är en tetraeder ABCD, sådan att |AB| = |AC| = |AD| = √2, och de tre plana vinklarna vid A är räta. Tetraederns höjd från A mot sidan BCD har längden:",
       options: [
         "√6/2",
