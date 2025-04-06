@@ -232,7 +232,8 @@ export const practiceQuestions = {
         "cotα",
         "kan ej avgöras"
       ],
-      answer: "tanα" // Facit: option b
+      answer: "tanα", // Facit: option b
+      image: "../images/fysik2024_1.png"
     },
     {
       id: 2,
@@ -254,7 +255,8 @@ export const practiceQuestions = {
         "5/8 mg",
         "4/5 mg"
       ],
-      answer: "3/8 mg" // Facit: option b
+      answer: "3/8 mg", // Facit: option b
+      image: "../images/fysik2024_3.png"
     },
     {
       id: 4,
@@ -326,12 +328,13 @@ export const practiceQuestions = {
       id: 10,
       text: "I en idealiserad elektrisk krets parallellkopplas två motstånd med resistanserna xR och R/x, där x är ett dimensionslöst tal. Vilket alternativ beskriver bäst den utvecklade effekten i kretsen som funktion av x?",
       options: [
-        "Effekt ∝ x/(1+x)²",
-        "Effekt ∝ 1/(1+x)²",
-        "Effekt ∝ x²/(1+x)²",
-        "Effekt ∝ 1/(1+x)"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      answer: "Effekt ∝ x/(1+x)²" // Facit: option a (assumed)
+      answer: "C", // Facit: option a (assumed)
+      image: "../images/fysik2024_10.png"
     }
   ]
 };

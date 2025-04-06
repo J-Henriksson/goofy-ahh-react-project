@@ -59,6 +59,15 @@ const PracticeMode = () => {
       {selectedTopic && currentQuestion && (
         <div className={styles.questionContainer}>
           <h2 className={styles.questionText}>{currentQuestion.text}</h2>
+          {currentQuestion.image && (
+            <div className={styles.imageContainer}>
+              <img
+                src={currentQuestion.image}
+                alt="Question illustration"
+                className={styles.questionImage}
+              />
+            </div>
+          )}
           <div className={styles.options}>
             {currentQuestion.options.map((option) => (
               <label key={option} className={styles.optionLabel}>
@@ -90,4 +99,3 @@ const PracticeMode = () => {
 };
 
 export default PracticeMode;
-
