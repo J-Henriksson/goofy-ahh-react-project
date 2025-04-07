@@ -246,6 +246,7 @@ export const practiceQuestions = {
   physics: [
     {
       id: 1,
+      category: ["Mekanik"],
       text: "En homogen cylinder vilar mot två glatta väggar som bildar vinklarna α och (π/2 − α) med horisontalplanet. Vad är kvoten N₂/N₁, där N₁ och N₂ är kontaktkrafterna?",
       options: [
         "1",
@@ -258,6 +259,7 @@ export const practiceQuestions = {
     },
     {
       id: 2,
+      category: ["Speciell relativitetsteori"],
       text: "En rymdfarare färdas från jorden med hastigheten 0.8c, vänder och färdas hem med samma hastighet. När hon återvänder har det gått 15 år på hennes klocka. Hur lång tid har passerat på jorden?",
       options: [
         "9 år",
@@ -269,6 +271,7 @@ export const practiceQuestions = {
     },
     {
       id: 3,
+      category: ["Mekanik"],
       text: "En planka med massan m och längden L är horisontellt upplagd på två stödpunkter – den ena vid ena änden och den andra vid 3L/8 från den andra änden. Plankans massa är jämnt fördelad. Hur stor är den vertikala kraften från stödet A?",
       options: [
         "1/5 mg",
@@ -281,6 +284,7 @@ export const practiceQuestions = {
     },
     {
       id: 4,
+      category: ["Mekanik"],
       text: "En kropp glider på ett lutande plan med vinkeln v. Om den släpps från vila, hur lång tid tar det att färdas sträckan ℓ?",
       options: [
         "τ = √(2ℓ/(g(µ sin v+cos v)))",
@@ -292,6 +296,7 @@ export const practiceQuestions = {
     },
     {
       id: 5,
+      category: ["Annat"],
       text: "Varför upplever astronauterna viktlöshet på ISS?",
       options: [
         "De är så långt ut att de lämnat jordens gravitationsfält.",
@@ -303,6 +308,7 @@ export const practiceQuestions = {
     },
     {
       id: 6,
+      category: ["Elektromagnetism och optik"],
       text: "En ljuskälla befinner sig 0.6 m från en positiv lins. Den avbildas på en skärm på andra sidan om linsen, upp- och nedvänd och i halva storleken. Hur stor är linsens brännvidd?",
       options: [
         "0.2 m",
@@ -314,6 +320,7 @@ export const practiceQuestions = {
     },
     {
       id: 7,
+      category: ["Mekanik"],
       text: "En boll som väger 50 g släpps från vila och faller under inverkan av gravitation och luftmotstånd. Vad är dess rörelseenergi Ek efter att den fallit 10 m?",
       options: [
         "Ek = 2.5 J",
@@ -325,6 +332,7 @@ export const practiceQuestions = {
     },
     {
       id: 8,
+      category: ["Annat"],
       text: "Vilket tal är störst?",
       options: [
         "Antalet sandkorn i en hink",
@@ -336,6 +344,7 @@ export const practiceQuestions = {
     },
     {
       id: 9,
+      category: ["Mekanik"],
       text: "Om jordens radie var dubbelt så stor (med samma densitet), hur stor skulle tyngdaccelerationen vid jordytan vara?",
       options: [
         "g/4",
@@ -347,6 +356,7 @@ export const practiceQuestions = {
     },
     {
       id: 10,
+      category: ["Ellära"],
       text: "I en idealiserad elektrisk krets parallellkopplas två motstånd med resistanserna xR och R/x, där x är ett dimensionslöst tal. Vilket alternativ beskriver bäst den utvecklade effekten i kretsen som funktion av x?",
       options: ["A", "B", "C", "D"],
       answer: "C", // Facit: option a 
@@ -354,6 +364,7 @@ export const practiceQuestions = {
     },
     {
       id: 13,
+      category: ["Mekanik"],
       text: "En boll släpps från vila i ett läge vid tiden t = 0. En annan boll ges samtidigt en horisontell hastighet i ett annat läge. Bollarna faller sedan under inverkan av tyngdkraften. Luftmotstånd försummas. Vilken av graferna kan beskriva avståndet s mellan bollarna som funktion av tiden?",
       options: ["A", "B", "C", "D"],
       answer: "A",
