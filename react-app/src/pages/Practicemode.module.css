@@ -6,11 +6,12 @@
   text-align: center;
 }
 
+/* Topic selection container for big Math/Physics buttons */
 .topicSelection {
   display: flex;
   justify-content: center;
   gap: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .topicButton {
@@ -18,7 +19,7 @@
   font-size: 2rem;
   font-weight: 600;
   color: #fff;
-  background: linear-gradient(135deg, #3d94f6, #007ad9);
+  background: linear-gradient(135deg, #0056b3, #003f7f);
   border: none;
   border-radius: 12px;
   cursor: pointer;
@@ -31,15 +32,50 @@
 }
 
 .selected {
-  background: linear-gradient(135deg, #0056b3, #003f7f);
+  background: linear-gradient(135deg, #3d94f6, #007ad9);
 }
 
+/* Category selection container for toggleable category buttons */
+.categorySelection {
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Category buttons: smaller version */
+.categoryButton {
+  padding: 8px 16px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #0056b3, #003f7f);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.categoryButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Style for a category button that is selected */
+.selectedCategory {
+  background: linear-gradient(135deg, #3d94f6, #007ad9);
+}
+
+/* Question Container */
 .questionContainer {
   background-color: #222;
   padding: 30px;
   border-radius: 8px;
   color: #fff;
   text-align: left;
+  margin-top: 20px;
 }
 
 .questionText {
@@ -56,9 +92,10 @@
   max-width: 100%;
   height: auto;
   border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Options */
 .options {
   display: flex;
   flex-direction: column;
@@ -85,6 +122,7 @@
   margin-right: 10px;
 }
 
+/* Button Container */
 .buttonContainer {
   display: flex;
   gap: 20px;
@@ -106,10 +144,10 @@
   background-color: #0056b3;
 }
 
+/* Feedback message */
 .feedback {
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
   margin-top: 10px;
 }
-

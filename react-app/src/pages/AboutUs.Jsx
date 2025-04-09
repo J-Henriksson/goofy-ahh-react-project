@@ -15,7 +15,7 @@ const AboutUs = () => {
           är din golden ticket!</span> Precis som högskoleprovet – men skräddarsytt för tekniska ämnen.
         </p>
 
-        <div style={{ backgroundColor: '#f8f9fa', padding: '20px', borderRadius: '8px' }}>
+        <div style={{ padding: '20px', borderRadius: '8px' }}>
           <h3 style={{ color: '#16a085', marginBottom: '15px' }}>Varför detta prov är unikt:</h3>
           <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
             <li style={{ marginBottom: '10px' }}>Hamna i en <strong>separat urvalsgrupp</strong> – konkurrera inte med HP-resultat</li>
@@ -40,7 +40,7 @@ const AboutUs = () => {
       <section style={{ marginBottom: '40px' }}>
         <h2 style={{ color: '#3498db', marginBottom: '15px' }}>Hur funkar det?</h2>
         <p style={{ lineHeight: '1.6', marginBottom: '15px' }}>
-          <span style={{ fontWeight: '500' }}>Godkänt resultat = Garantierat intag</span> på många program. 
+          <span style={{ fontWeight: '500' }}>Godkänt resultat = Garanterat intag</span> på många program. 
           På Chalmers räcker det ofta att bara <strong>klara provet</strong> för att bli antagen – 
           ingen tävling om högsta poäng!
         </p>
